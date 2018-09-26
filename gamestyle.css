@@ -1,0 +1,55 @@
+h1 {
+    font-weight:300;
+    color:rgb(5, 5, 5);
+  }
+
+h2,h3,h4
+{
+    font-family: 'Noto Serif', serif;
+    color:rgba(42, 42, 145, 0.8);
+}
+p,label
+{
+    font-family: 'Roboto Mono', monospace;
+    color: black;
+}
+
+
+.main
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.game_panel
+{
+   
+    margin: auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    height: 460px;
+    width: 460px;
+    background: rgba(10,50,40,0.5);
+    border: 9px ridge black;   
+    padding: 5px;
+
+}
+.sub_panel
+{
+    
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    height: 150px;
+    width: 150px;
+    color:rgb(5, 5, 5);
+    font-size:50px;
+
+
+}
+.player_info
+{
+    font-family: 'Noto Serif', serif;
+    margin-left: 10px;
+
+}

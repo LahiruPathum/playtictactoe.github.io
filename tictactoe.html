@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TicTacToe</title>
+        <link rel="stylesheet" type="text/css" href="gamestyle.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="playstyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Ubuntu|oboto+Mono|Spirax" rel="stylesheet"> 
+        
+    </head>
+    <body>
+        <div class="main">
+            <div class="player_info">
+                    <h2>Player 1</h2>
+                    <label for="name1">Name:</label>
+                    <input type="text" id="name1" name="name1" class="input" placeholder="1st player name">
+                    <br>
+                    <br>
+                    <label for="type">Type: X</label>
+            </div>
+            <div class="game_panel">
+                <button class="sub_panel" id="1" onclick='xoo(1);' value=""></button>
+                <button class="sub_panel" id="2" onclick='xoo(2);' value=""></button>
+                <button class="sub_panel" id="3" onclick='xoo(3);' value=""></button>
+                <button class="sub_panel" id="4" onclick='xoo(4);' value=""></button>
+                <button class="sub_panel" id="5" onclick='xoo(5);' value=""></button>
+                <button class="sub_panel" id="6" onclick='xoo(6);' value=""></button>
+                <button class="sub_panel" id="7" onclick='xoo(7);' value=""></button>
+                <button class="sub_panel" id="8" onclick='xoo(8);' value=""></button>
+                <button class="sub_panel" id="9" onclick='xoo(9);' value=""></button>
+            </div>
+            <div class="player_info">
+                <h2>Player 2</h2>
+                <label for="name2">Name:</label>
+                <input type="text" name="name2" id="name2" class="input" placeholder="2st player name">
+                <br>
+                <br>
+                <label for="type">Type: O</label>
+            </div>
+        </div>
+
+        <button id="reset" onclick="zuruecksetzen()"><b>Reset</b></button>
+
+        <div id="status">draw</div>
+
+        <div class="center-footer">
+            Copyright &copy; Lahiru Pathum 2018 
+        </div>
+                
+        <script src="play.js"></script>
+    </body>
+</html> 

@@ -1,0 +1,47 @@
+body
+{
+   margin: 10px;
+   padding:10px;
+   background-color: #bae6ab
+}
+
+.input[type="text"]
+{
+    border: none;
+    border-bottom: 1px solid rgb(251, 253, 253);
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: rgb(24, 6, 44);
+    font-size: 16px;
+}
+::placeholder
+{
+    color: rgba(61, 59, 82, 0.6);
+}
+select
+{
+    border: none;
+    background: transparent;
+    outline: none;
+}
+#reset
+{
+    font-family: 'Roboto Mono', monospace;
+    width: 150px;
+    height: 30px;
+    background:linear-gradient(to bottom, #ffffff 0%,#efef00 100%);
+    border-color: rgba(26, 117, 38, 0.8);
+    border-radius: 15px; 
+    position: absolute; 
+    left: 44%; 
+    bottom: 50px;
+}
+.center-footer
+{
+    left: 44.5%; 
+    font-family: 'Spirax', cursive;
+    font-size: 10px;
+    bottom: 20px;
+    position: fixed;
+}
