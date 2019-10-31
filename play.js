@@ -203,7 +203,7 @@ function setzen(x, zeichen) {
      button.value = zeichen;
      button.disabled=true;
      }
-     buttons();
+     endepruefen();
      }
   
 //welches Zeichen?
