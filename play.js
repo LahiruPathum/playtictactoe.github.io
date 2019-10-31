@@ -15,8 +15,8 @@ function snack() {
 
 }
 
-//setzt Buttons zurück
-function zuruecksetzen() {
+//set buttons
+function buttons() {
     var b1 = document.getElementById("1");
     var b2 = document.getElementById("2");
     var b3 = document.getElementById("3");
@@ -59,7 +59,7 @@ function zuruecksetzen() {
     
 }
 
-function buttonsdeaktivieren() {
+function deactivateButtons() {
     var b1 = document.getElementById("1");
     var b2 = document.getElementById("2");
     var b3 = document.getElementById("3");
@@ -81,11 +81,11 @@ function buttonsdeaktivieren() {
     b9.disabled = true;
 }
 
-function popupzeigen(gewinner) {
-      //deaktiviert alle Buttons
-      buttonsdeaktivieren();
+function popup(gewinner) {
+      //deactivate all buttons
+      deactivateButtons();
     
-      //ersetzt Text
+      //view Text
       popuptext = document.getElementById("status");
       popuptext.innerHTML = gewinner + " wins.";
 
@@ -108,35 +108,35 @@ function endepruefen() {
     
     //obere Reihe
     if (((b1=="X") || (b1=="O")) && ((b1 == b2) && (b2 == b3))) {
-        popupzeigen(b1);
+        popup(b1);
     }
     //linke Spalte
     else if (((b1=="X") || (b1=="O")) && ((b1 == b4) && (b4 == b7))){
-        popupzeigen(b1);
+        popup(b1);
     }
     //untere Reihe
     else if (((b9=="X") || (b9=="O")) && ((b9 == b8) && (b8 == b7))){
-        popupzeigen(b9);
+        popup(b9);
     }
     //rechte Spalte
     else if (((b9=="X") || (b9=="O")) && ((b9 == b6) && (b6 == b3))){
-      popupzeigen(b9);
+      popup(b9);
     }
     //mittlere Reihe
     else if (((b4=="X") || (b4=="O")) && ((b4 == b5) && (b5 == b6))){
-      popupzeigen(b4);
+      popup(b4);
     }
     //mittlere Spalte
     else if (((b2=="X") || (b2=="O")) && ((b2 == b5) && (b5 == b8))){
-      popupzeigen(b2);
+      popup(b2);
     }
     //1-9 Diagonale
     else if (((b1=="X") || (b1=="O")) && ((b1 == b5) && (b5== b9))){
-      popupzeigen(b1);
+      popup(b1);
     }
     //7-3 Diagonale
     else if (((b7=="X") || (b7=="O")) && ((b7 == b5) && (b5 == b3))){
-      popupzeigen(b7);
+      popup(b7);
     }
     //unentschieden
 //     else {
@@ -203,7 +203,7 @@ function setzen(x, zeichen) {
      button.value = zeichen;
      button.disabled=true;
      }
-     endepruefen();
+     buttons();
      }
   
 //welches Zeichen?
